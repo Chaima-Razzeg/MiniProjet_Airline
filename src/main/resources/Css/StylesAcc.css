@@ -1,0 +1,13 @@
+.login_container{
+    -fx-background-color: #6690b0;
+}
+.login_form_container Button{
+    -fx-background-color : #FFFFFF;
+    -fx-text-fill : #6690b0;
+    -fx-pref-width : 350;
+    -fx-pref-height : 30;
+    -fx-font-size: 1.2em;
+}
+.login_form_container Button:hover{
+    -fx-cursor: hand;
+}

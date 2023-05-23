@@ -1,0 +1,7 @@
+ .buttonStyle {
+     -fx-background-color: #6690b0;
+     -fx-text-size: 15;
+     -fx-text-fill: white;
+     -fx-font-size: 16px;
+     -fx-font-weight: bold;
+ }

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../Css/StylesDash.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.airline.AddCompController">
+    <children>
+        <VBox layoutX="-12.0" layoutY="29.0" prefHeight="400.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                    <VBox.margin>
+                        <Insets left="25.0" top="15.0" />
+                    </VBox.margin>
+                    <image>
+                        <Image url="@../assets/1.png" />
+                    </image>
+                </ImageView>
+                <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="205.0" styleClass="buttonStyle" text="List of companies" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="16.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="200.0" styleClass="buttonStyle" text="List of airports" textFill="WHITE">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="206.0" styleClass="buttonStyle" text="Reservation List">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="205.0" styleClass="buttonStyle" text="List of customers">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="201.0" styleClass="buttonStyle" text="List of flights">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Button>
+            </children>
+            <styleClass>
+                <String fx:value="login_container" />
+                <String fx:value="logo_container" />
+            </styleClass>
+        </VBox>
+      <Text layoutX="327.0" layoutY="154.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add company">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="120.0" fitWidth="96.0" layoutX="351.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/compagnie-aerienne.png" />
+         </image>
+      </ImageView>
+      <GridPane layoutX="207.0" layoutY="175.0" prefHeight="105.0" prefWidth="381.0" AnchorPane.topAnchor="175.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Company code">
+               <GridPane.margin>
+                  <Insets left="3.0" top="30.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Company name" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="3.0" top="30.0" />
+               </GridPane.margin>
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="t_code" prefHeight="26.0" prefWidth="179.0" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="t_nameComp" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+      </GridPane>
+      <Button layoutX="241.0" layoutY="291.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="314.0" styleClass="buttonStyle" text="Add" onAction="#AddCompagny" fx:id="addButton"/>
+    </children>
+</AnchorPane>

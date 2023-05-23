@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="login_container" stylesheets="@../Css/StylesHome.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.airline.HomeController">
+   <children>
+      <Circle fill="#6690b0" layoutX="435.0" layoutY="186.0" radius="100.0" stroke="#e7e4e4" strokeType="INSIDE" AnchorPane.rightAnchor="65.0" />
+      <Circle fill="#6690b0" layoutX="158.0" layoutY="186.0" radius="100.0" stroke="WHITE" strokeType="INSIDE" AnchorPane.leftAnchor="58.0" />
+      <ImageView fx:id="admin" fitHeight="150.0" fitWidth="200.0" layoutX="83.0" layoutY="111.0" onMouseClicked="#handleAdminClick" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="customer" cache="true" fitHeight="150.0" fitWidth="200.0" layoutX="364.0" layoutY="111.0" onMouseClicked="#handleCustomerClick" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="90.0">
+         <image>
+            <Image url="@../assets/passenger.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="73.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Administration" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="381.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
